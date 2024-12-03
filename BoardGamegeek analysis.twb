@@ -1,0 +1,893 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1112.0850                               -->
+<workbook original-version='18.1' source-build='2024.3.1 (20243.24.1112.0850)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='games_detailed_info_filtered' inline='true' name='federated.13yxniu0vbkcoq18yrtjo1g6qeeu' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='games_detailed_info_filtered' name='textscan.0wtvg6g04wapa31095xi50psmoc1'>
+            <connection class='textscan' directory='//wsl.localhost/Ubuntu/home/dans-wsl/cse6242/HW2/Q1' filename='games_detailed_info_filtered.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0wtvg6g04wapa31095xi50psmoc1' name='games_detailed_info_filtered.csv' table='[games_detailed_info_filtered#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Category' ordinal='0' />
+            <column datatype='string' name='Mechanics' ordinal='1' />
+            <column datatype='string' name='Max.Players' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[games_detailed_info_filtered.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Category]</local-name>
+            <parent-name>[games_detailed_info_filtered.csv]</parent-name>
+            <remote-alias>Category</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_detailed_info_filtered.csv_B669CC5176DA4A4E9E94D0A343BAFE6A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mechanics</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Mechanics]</local-name>
+            <parent-name>[games_detailed_info_filtered.csv]</parent-name>
+            <remote-alias>Mechanics</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_detailed_info_filtered.csv_B669CC5176DA4A4E9E94D0A343BAFE6A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Max.Players</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Max.Players]</local-name>
+            <parent-name>[games_detailed_info_filtered.csv]</parent-name>
+            <remote-alias>Max.Players</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[games_detailed_info_filtered.csv_B669CC5176DA4A4E9E94D0A343BAFE6A]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='games_detailed_info_filtered.csv' datatype='table' name='[__tableau_internal_object_id__].[games_detailed_info_filtered.csv_B669CC5176DA4A4E9E94D0A343BAFE6A]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='games_detailed_info_filtered.csv' id='games_detailed_info_filtered.csv_B669CC5176DA4A4E9E94D0A343BAFE6A'>
+            <properties context=''>
+              <relation connection='textscan.0wtvg6g04wapa31095xi50psmoc1' name='games_detailed_info_filtered.csv' table='[games_detailed_info_filtered#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Category' ordinal='0' />
+                  <column datatype='string' name='Mechanics' ordinal='1' />
+                  <column datatype='string' name='Max.Players' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='popular_board_game' inline='true' name='federated.0r7u5fd06qqtvf1fn8mcl1hqzl8w' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='popular_board_game' name='textscan.1v6pqbq0bmg1z31cr80tz0p408r0'>
+            <connection class='textscan' directory='C:/Users/micha/Downloads/hw2_skeleton/Q1' filename='popular_board_game.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1v6pqbq0bmg1z31cr80tz0p408r0' name='popular_board_game.csv' table='[popular_board_game#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='name' ordinal='0' />
+            <column datatype='string' name='category' ordinal='1' />
+            <column datatype='string' name='playtime' ordinal='2' />
+            <column datatype='integer' name='playtime_num' ordinal='3' />
+            <column datatype='real' name='avg_rating' ordinal='4' />
+            <column datatype='integer' name='num_ratings' ordinal='5' />
+            <column datatype='integer' name='min_players' ordinal='6' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[popular_board_game.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[popular_board_game.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[popular_board_game.csv_CFBEC2C0253745B79EDDDBF4C2F30A5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[popular_board_game.csv]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[popular_board_game.csv_CFBEC2C0253745B79EDDDBF4C2F30A5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>playtime</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[playtime]</local-name>
+            <parent-name>[popular_board_game.csv]</parent-name>
+            <remote-alias>playtime</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[popular_board_game.csv_CFBEC2C0253745B79EDDDBF4C2F30A5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>playtime_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[playtime_num]</local-name>
+            <parent-name>[popular_board_game.csv]</parent-name>
+            <remote-alias>playtime_num</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[popular_board_game.csv_CFBEC2C0253745B79EDDDBF4C2F30A5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_rating]</local-name>
+            <parent-name>[popular_board_game.csv]</parent-name>
+            <remote-alias>avg_rating</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[popular_board_game.csv_CFBEC2C0253745B79EDDDBF4C2F30A5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_ratings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_ratings]</local-name>
+            <parent-name>[popular_board_game.csv]</parent-name>
+            <remote-alias>num_ratings</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[popular_board_game.csv_CFBEC2C0253745B79EDDDBF4C2F30A5C]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>min_players</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[min_players]</local-name>
+            <parent-name>[popular_board_game.csv]</parent-name>
+            <remote-alias>min_players</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[popular_board_game.csv_CFBEC2C0253745B79EDDDBF4C2F30A5C]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='popular_board_game.csv' datatype='table' name='[__tableau_internal_object_id__].[popular_board_game.csv_CFBEC2C0253745B79EDDDBF4C2F30A5C]' role='measure' type='quantitative' />
+      <column caption='Avg Rating' datatype='real' name='[avg_rating]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Min Players' datatype='integer' name='[min_players]' role='measure' type='quantitative' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='Num Ratings' datatype='integer' name='[num_ratings]' role='measure' type='quantitative' />
+      <column caption='Playtime' datatype='string' name='[playtime]' role='dimension' type='nominal' />
+      <column caption='Playtime Num' datatype='integer' name='[playtime_num]' role='dimension' type='ordinal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='popular_board_game.csv' id='popular_board_game.csv_CFBEC2C0253745B79EDDDBF4C2F30A5C'>
+            <properties context=''>
+              <relation connection='textscan.1v6pqbq0bmg1z31cr80tz0p408r0' name='popular_board_game.csv' table='[popular_board_game#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='name' ordinal='0' />
+                  <column datatype='string' name='category' ordinal='1' />
+                  <column datatype='string' name='playtime' ordinal='2' />
+                  <column datatype='integer' name='playtime_num' ordinal='3' />
+                  <column datatype='real' name='avg_rating' ordinal='4' />
+                  <column datatype='integer' name='num_ratings' ordinal='5' />
+                  <column datatype='integer' name='min_players' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='mjpetrey/boardgamegeek' inline='true' name='federated.1oil6y80srpslq142p6vu0j953yk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='mjpetrey/boardgamegeek' name='webdata-direct.0fn94ac0yvl15f12b27hc1azzjg4'>
+            <connection APIVersion='' authType='basic' authentication='yes' channel='https' class='webdata-direct' connectionData='{&quot;dataset&quot;:&quot;mjpetrey/boardgamegeek&quot;,&quot;query&quot;:&quot;SELECT * FROM games_detailed_info_filtered&quot;,&quot;queryType&quot;:&quot;sql&quot;,&quot;version&quot;:&quot;1.1.0&quot;}' connectionName='mjpetrey/boardgamegeek' filename='' increment-key='' path='/' port='443' scriptVersion='' secondary_whitelist='' server='tableau.data.world' urlQuery='code=00000.086fcf23-a1ef-43b0-9834-2d90a1869143&amp;state=ef026870-b1c9-11ef-b096-a382fd66bf9f' username='' usernameAlias='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='webdata-direct.0fn94ac0yvl15f12b27hc1azzjg4' name='Query Results' table='[QueryTable]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>category</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[category]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>category</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <object-id>[QueryTable_AF5C2FC32A354DFF8DAF6FF17CB7EF08]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mechanics</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[mechanics]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>mechanics</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <object-id>[QueryTable_AF5C2FC32A354DFF8DAF6FF17CB7EF08]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>max_players</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[max_players]</local-name>
+            <parent-name>[Query Results]</parent-name>
+            <remote-alias>max_players</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+            <object-id>[QueryTable_AF5C2FC32A354DFF8DAF6FF17CB7EF08]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Measure Names' datatype='string' name='[:Measure Names]' role='dimension' type='nominal' />
+      <column caption='Measure Values' datatype='real' name='[Multiple Values]' role='measure' type='quantitative' />
+      <column caption='Query Results' datatype='table' name='[__tableau_internal_object_id__].[QueryTable_AF5C2FC32A354DFF8DAF6FF17CB7EF08]' role='measure' type='quantitative' />
+      <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+      <column caption='Max Players' datatype='string' name='[max_players]' role='dimension' type='nominal' />
+      <column caption='Mechanics' datatype='string' name='[mechanics]' role='dimension' type='nominal' />
+      <column-instance column='[mechanics]' derivation='None' name='[none:mechanics:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/micha/OneDrive/Documents/My Tableau Repository/Datasources/federated.1oil6y80srpslq142p6vu0j953yk_1rxyh7c0g5i2hz1c7p7ab1hauvvo.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='12/03/2024 10:57:59 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='mjpetrey/boardgamegeek' increment-value='%null%' refresh-type='create' rows-inserted='1642' timestamp-start='2024-12-03 22:57:56.158' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>category</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[QueryTable_AF5C2FC32A354DFF8DAF6FF17CB7EF08]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mechanics</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mechanics]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mechanics</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[QueryTable_AF5C2FC32A354DFF8DAF6FF17CB7EF08]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>max_players</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[max_players]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>max_players</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Query Results</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LROOT' />
+              <object-id>[QueryTable_AF5C2FC32A354DFF8DAF6FF17CB7EF08]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:mechanics:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Card Drafting&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Modular Board&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;Memory&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Hand Management&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dice Rolling&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Query Results' id='QueryTable_AF5C2FC32A354DFF8DAF6FF17CB7EF08'>
+            <properties context=''>
+              <relation connection='webdata-direct.0fn94ac0yvl15f12b27hc1azzjg4' name='Query Results' table='[QueryTable]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_F7AB66B6DCF14145B57F241E684A8BE8]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Sheet 1' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Category' />
+        <param name='target' value='Sheet 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Game Counts by Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='popular_board_game' name='federated.0r7u5fd06qqtvf1fn8mcl1hqzl8w' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0r7u5fd06qqtvf1fn8mcl1hqzl8w'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='Count' name='[cnt:name:qk]' pivot='key' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[playtime]' derivation='None' name='[none:playtime:nk]' pivot='key' type='nominal' />
+            <column caption='Playtime' datatype='string' name='[playtime]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0r7u5fd06qqtvf1fn8mcl1hqzl8w].[cnt:name:qk]' scope='rows' value='Game Count' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0r7u5fd06qqtvf1fn8mcl1hqzl8w].[none:category:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0r7u5fd06qqtvf1fn8mcl1hqzl8w].[cnt:name:qk]</rows>
+        <cols>([federated.0r7u5fd06qqtvf1fn8mcl1hqzl8w].[none:category:nk] / [federated.0r7u5fd06qqtvf1fn8mcl1hqzl8w].[none:playtime:nk])</cols>
+      </table>
+      <simple-id uuid='{46AA0493-3811-4E7A-BB89-89F85840BABB}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='mjpetrey/boardgamegeek' name='federated.1oil6y80srpslq142p6vu0j953yk' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1oil6y80srpslq142p6vu0j953yk'>
+            <column caption='Category' datatype='string' name='[category]' role='dimension' type='nominal' />
+            <column-instance column='[mechanics]' derivation='Count' name='[cnt:mechanics:qk]' pivot='key' type='quantitative' />
+            <column caption='Max Players' datatype='string' name='[max_players]' role='dimension' type='nominal' />
+            <column caption='Mechanics' datatype='string' name='[mechanics]' role='dimension' type='nominal' />
+            <column-instance column='[category]' derivation='None' name='[none:category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[max_players]' derivation='None' name='[none:max_players:nk]' pivot='key' type='nominal' />
+            <column-instance column='[mechanics]' derivation='None' name='[none:mechanics:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1oil6y80srpslq142p6vu0j953yk].[none:max_players:nk]'>
+            <groupfilter function='level-members' level='[none:max_players:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1oil6y80srpslq142p6vu0j953yk].[none:max_players:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1oil6y80srpslq142p6vu0j953yk].[none:category:nk]' value='164' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1oil6y80srpslq142p6vu0j953yk].[none:mechanics:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1oil6y80srpslq142p6vu0j953yk].[cnt:mechanics:qk]</rows>
+        <cols>[federated.1oil6y80srpslq142p6vu0j953yk].[none:category:nk]</cols>
+      </table>
+      <simple-id uuid='{410CCA24-00BD-4B08-BF9B-6C2249098F80}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <datasources>
+        <datasource caption='mjpetrey/boardgamegeek' name='federated.1oil6y80srpslq142p6vu0j953yk' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1oil6y80srpslq142p6vu0j953yk'>
+        <column caption='Max Players' datatype='string' name='[max_players]' role='dimension' type='nominal' />
+        <column-instance column='[max_players]' derivation='None' name='[none:max_players:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='82400' x='800' y='1000'>
+              <zone h='98000' id='3' name='Sheet 3' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='15875' id='8' name='Sheet 3' param='[federated.1oil6y80srpslq142p6vu0j953yk].[none:max_players:nk]' type-v2='filter' values='database' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='15875' id='8' mode='checkdropdown' name='Sheet 3' param='[federated.1oil6y80srpslq142p6vu0j953yk].[none:max_players:nk]' type-v2='filter' values='database' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98000' id='3' is-fixed='true' name='Sheet 3' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D88846B5-EF5D-46E1-BA32-B3E1F336A5F3}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0r7u5fd06qqtvf1fn8mcl1hqzl8w].[none:category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1271719B-79C2-4389-B9D4-246582A23E44}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1oil6y80srpslq142p6vu0j953yk].[none:max_players:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1oil6y80srpslq142p6vu0j953yk].[none:mechanics:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1oil6y80srpslq142p6vu0j953yk].[none:category:nk]</field>
+            <field>[federated.1oil6y80srpslq142p6vu0j953yk].[none:mechanics:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DB60E6DD-B255-4439-80A9-FCA8DF55B5B7}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{B050D653-0AE5-405A-B454-21B96D7B7988}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAALy0lEQVR4nO3dz28b953G8ffMkBz+pkiJlCxZths7ctTYqdNsWxSbbIDtpUDRawv00NN2
+      /4lsbz33L+gteygWxe69QBfFFttNf7pJnNhx4lSyJVuWaFv8LXI4M3twkzal4ozBkEPx+7yO
+      hszvx7Afz3xnHs5YYRiGiBjKjnsAkTgpAGI0BeCE63cOeeN3f6Tv+QA0mo2YJzpZEnEPIOO5
+      8fZbbL74Mlvv/Ja3tx/R7zxivVrk4SBBOZckHNoM8XGTLtlMCt9JceG556nkUnGPPhN0BDjh
+      1s+d5a2rV3nQ6rO8tMjZ9TUyhTKbz34Bz+tz2OgAkHBzXH7pJXa2tlnI6h//RyxdBZpXAe+9
+      8y6nL1wk5yYBGPRaNHoh1Uox5tlmx9gB8H0fx3E+r3lEpkqnQGI0BUCMpgCI0RQAMZoCIEZT
+      AMRoCoAYLVIVYnjU5v0/77CyUuP+gya1okvbsziztjLp+UQmKlIABt023X6Pnf0Ga7kEB32f
+      LCFBEBAEAbqZbK53t+u8s1WPZe1vfuUZCmPWOiIFILAcMm6KTNJmt9GlXEjRHdrYtk0YhroT
+      bLB3t+v89BfXYln7lRfOUC5mx/qMSAHIl6t8sVwdayGRWaRNsBhNARCjKQBiNAVAjKYAiNEU
+      ADGaAiBGUwDEaJFuhB11mrx/833yC0scBSGFZEjXs9g4f27C44lMVqQApHMFSotVitk0u3t1
+      BqkimZS6QAJhEN/ffeD7DIfDsT4jUgDCMKS0UMYOBiRSaYquoy6QAGDZVmxr245DIjHes90i
+      /W7LsikVCwBcXFgca0GRWaJNsBhNARCjKQBiNAVAjKbHo8tYqnaDzeR2LGu7ljf2ZygAMpaX
+      02/x1YXXY1k7Z38HGO+qpE6BxGgKgBjtqbpAuUqNdqtDpeiqCyRz4am6QLZtcXohx0FokVUX
+      SIAgxi6Q7/sE0+wCpawht/cbVAsubXWBBPBj7AI5joM99S5QoQxAZaxlRWaDNsFiNAVAjKYA
+      iNEUADGaAiBGUwDEaAqAGE0BEKNFuhHWOzzg/bsPqWRdWj64YZ+uZ3Fpc2PS84lMVLR3hB31
+      ODpq07IdOo1H2MtVco66QGJIF6i4vM6qZ1FdqrD/MM9SKaPnAglgTBfI4vT6OgDrazkAMmMt
+      KzIbtAkWoykAYjQFQIymAIjRFAAxmgIgRlMAxGiRAhCGIbt3thkM+tzdO6DXblB/1Jr0bCIT
+      F+lGWGv/DvcOe3j+HokwYLtn4RJSKeVUhTCcEVWIRCqNEzyg0fAJfJ980aXjWapCiBlViGy5
+      xovl2lgLicwibYLFaAqAGE0BEKMpAGI0BUCMpgCI0RQAMZoCIEaLdCMsGHa58d5tTq0scf+w
+      zVLh8SuSzqytTHo+kYmKFAC/16bnh7RaHfB9ugMfK9RjUcSQLlCYyJJLHuCkXPx2h8C1Gfh6
+      LIoY0gVKZfI8t/k8AGurOu2R+aFNsBhNARCjKQBiNAVAjKYAiNEUADGaAiBGUwDEaE/VBVpd
+      rbH3oEmt6NJWF0jmwFN1geqHbWpph4O+TxZ1gcSwLlDSgt1Gl3IhpVckCWBgF0hknmgTLEZT
+      AMRoxwag2Whw48Z7aGsr8+7YANz+4AbXr92kP+1pRKbs2AD0Bx65bHras4hM3chVoDDo46Yy
+      kAzQxU2ZdyMBsGyXfCFDcWgR3xVekek49hSo3WlPew6RWBwbgGQiZOvW7l+vAoUh1/70JvX7
+      d7l+a4ud23/m5q2tqQ0pMinH3gkuLp6iUjr8OACP9m5z++4+ucUKQa/LIFUkk1IXSOawCxQG
+      Adu3blFcqn58eCifOssrmRIBPoOeR9F11AUSYA67QEftQ7peSMLvEfzNrxcWFgAoLSyOtaDI
+      LBnZA2SKFdaqZfoDL455RKbq2ONHp33A3p0u/rSnEZmykSPAUfuQI8/Bd32ScUwkMkUjARgO
+      +gxtl7Ory5/YA4jMo2OPAH+6epWt3T3dCZa5N7IHKNbO8i8/+AHZtMpwMv9GjwCNOj/72X/y
+      q1/9Bl0Hknk3EoDi8mm+9qVNup22vhAjc+/Yy6C5fI5sYfhxHToMA974n//l9IUz1O83yBdd
+      +p7Fpc2NKY4q8vk7NgDpfIUXNir4gAMc3t+hNww4bPWplgu0scg56gLJXHaBBvz6l78kX1vj
+      1VeXACivnOEfF2o4CYv9epOzeT0XSB6buy6QZac4tVrFT7if2AO4f7kqtLpSBSAz1rIis+HY
+      +GRSNv/35nVe/NqXoz05S4x1tLtM4zcvxLJ2+rvu2M/1Ofb311bPsLxYGvOjRWbfsQHwvAGl
+      WlVdIJl7xwag1WrRb3cZb38tMvtGTvHv33ybhfNfIvSv6UaYzL2RI0D1C+f54A+/pulbuHFM
+      JDJFI0cAO5nl5VdeiWMWkanT06HFaJEu83u9NtfeuUYmv0SYTOCGfbrqAskciHafy0lSKGQh
+      keSwvo+9XFUXSAAIgvi+N+j7PtY03hFmEWAlS5w+tYSbdlkqZdQFEgBsO76zaMdxSEzjHWGJ
+      VIbzz5wFYH0tB6gLJPNBm2AxmgIgRlMAxGgKgBhNARCjKQBiNH3ha4Ydto+4s9+MZe1zKyUK
+      2fmvQ0YKgO/12d7Z48z6Cvv1JuV8io5ns1QuTHo+o735wR4//o83Yln7h9//J/7hudVY1p6m
+      SAEIsfA6D7n+wZCya7Pds3AJqZRyqkJMUKw1g8BnGKFmYEQVYjg4YjAcguVz8KhDvujS8SxV
+      ISYs1pqBHa1mYEQVIp0rcvnKV8ZaSGQW6SqQGE0BEKMpAGI0BUCMpgCI0RQAMZoCIEabSBdo
+      6Adc365P4qM/02Ixw+qSKhoSTbTHohx1uLV1h+riIgfNDksFl65ncWZt5dif7/Y9/u0n//25
+      DhrVt77+LP/67ZdiWVtOnmhfinezLBSzNFsd8H26Ax8r/PTHovi+P5FhowjDMFKH5SRQF+jJ
+      ptYF6h3e596DDmvLFbr7Dwhcm4H/6Y9FcZz4AmBZ1tj9kFmhLtCTTa0LlC2v8GL58elOrbY8
+      1oIis2Q+/qucU8+ntnit9Hosa19Ingf0fQCJUcnusJnajmXtjNWNZd1p030AMdpEjgAFq8e/
+      V380iY/+TMn89wBdBpVojD0FetDo8vPffxjL2l/eOMXF9cVY1pZPMjcAzR4//cW1WNbOZ1IK
+      wIzQHkCMpgCI0Z6qC1SrVdl/2KJWdGk/oQt0EqStPpvJeC4xVuwLsawro56qC1R/2KaWdjjo
+      +2R5wiuSTkAXaMXa57WFeG4yJZOnGA6vfObPxdsFCkBdoMc+6gLVKgV2DzuUC6knviIpsBL0
+      duKpTGTOlchE6If4MXZYbNuO1GEJY+0CRZvRuC7Q2tpn/3wY2BztxhOAREPfBZDotAkWoykA
+      YjRjb4SFvoPXzMWydnKQjGVdGWVsAPwjl/b187GsnfxqiXQsK8vf0ymQGE0BEKMpAGI0BUCM
+      Fu0dYYMeH+7sU80ludceUEiGdD2LjfPnJjye2bxGnta7z8SydvIbOSOukET6MzqpDPmMC45N
+      0DtkkCqSSX16FyiIswsUBNGeZxPjjEHEGf2+zbCVn8JEo4YDS88F+oh31KFer1OtLpFIpSm6
+      zhO7QH6M7wyzInZY4pwxahco3ucCRZvx5rPneeOb/zyFiUZ9v1igPI0uUDKd4/LlSwCsnNwG
+      tExAK5/j7ko8vS/PGf8kTZtgMZoCIEYzYaMvE9T37tHo/DGWtYPw68B4FwkUABlLf7BHs3M1
+      lrWDoD/2Z+gUSIymAIjRFAAxmgIgRovcBbrx4Q6LhRT37jfIF136nsWlzY1JzycyUZG7QJVS
+      gaHXp1ou0MYi55zsLlDTdfntlUtTmGjUC4tlMrPes4naqQrj7QKN+z64yF2gZrPJ6toqrXaP
+      s/knPxfoJHSBeoU8v7tyeQoTjVqpVdmYky6QbRnwXKBkOsfFi49Pdwr5xzceMmMtKzIbtAkW
+      o03kTvAgmeS/YqrIXtnc4NVYVpaTaCIBCGw7torsuYIejSjR6RRIjKYAiNEUADGaAiBG+39Q
+      c5QS2vb8MwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
